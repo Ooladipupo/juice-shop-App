@@ -15,7 +15,7 @@ jobs:
   # Cache + Install
   # -------------------------
   create_cache:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
@@ -35,7 +35,7 @@ jobs:
   # Yarn Tests
   # -------------------------
   yarn_test:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     needs: create_cache
     steps:
       - uses: actions/checkout@v4
