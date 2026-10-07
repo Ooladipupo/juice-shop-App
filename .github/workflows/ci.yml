@@ -66,6 +66,7 @@ jobs:
       - name: Run Semgrep
         run: semgrep --config=auto
 
+        
       - name: Run Semgrep scan
         run: |
           mkdir -p semgrep
