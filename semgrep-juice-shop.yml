@@ -1,0 +1,6 @@
+rules:
+  - id: juice-test-rule
+    languages: [javascript]
+    message: Test rule to confirm YAML loads.
+    severity: ERROR
+    pattern: console.log("test")

@@ -10,3 +10,5 @@ repos:
           - p/security-audit
           - --config
           - p/javascript
+          - --config
+          - semgrep-juice-shop.yml
