@@ -5,8 +5,8 @@ repos:
       - id: semgrep
         args:
           - --config
-          - p/owasp-top-ten
-          - --config
-          - p/javascript
+          - p/nodejsscan
           - --config
           - p/security-audit
+          - --config
+          - p/javascript
