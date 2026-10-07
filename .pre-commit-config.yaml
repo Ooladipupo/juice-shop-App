@@ -6,4 +6,8 @@ repos:
       entry: semgrep
       # Replace <SEMGREP_RULESET_URL> with your custom rule source
       # or see https://semgrep.dev/explore to select a ruleset and copy its URL
-      args: ['--config', 'auto']
+      args: [
+  '--config', 'p/owasp-top-ten',
+  '--config', 'p/javascript',
+  '--config', 'p/security-audit'
+]
