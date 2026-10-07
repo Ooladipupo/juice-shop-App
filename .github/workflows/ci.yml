@@ -51,3 +51,25 @@ jobs:
 
       - name: Run tests
         run: yarn test
+
+  # -------------------------
+  # Semgrep
+  # -------------------------
+  semgrep:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Semgrep
+        run: pip install semgrep
+
+      - name: Run Semgrep
+        run: semgrep --config=auto
+
+      - name: Run Semgrep scan
+        run: |
+          mkdir -p semgrep
+          semgrep scan \
+            --config p/ci \
+            --sarif \
+            --output semgrep/semgrep-report.json || true
