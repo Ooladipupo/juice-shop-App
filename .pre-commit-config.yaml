@@ -11,3 +11,4 @@ repos:
   '--config', 'p/javascript',
   '--config', 'p/security-audit'
 ]
+
