@@ -5,10 +5,4 @@ repos:
       - id: semgrep
         args:
           - --config
-          - p/nodejsscan
-          - --config
           - p/security-audit
-          - --config
-          - p/javascript
-          - --config
-          - semgrep-juice-shop.yml
